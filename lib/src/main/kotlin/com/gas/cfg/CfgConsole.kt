@@ -7,7 +7,7 @@ class CfgConsole(val args: Array<String>): Config{
 		var key: String? = null
 		for(s in args){
 			if(key != null){
-				props.put(key,s)
+				props.put(key, s)
 				key = null
 			}else{
 				key = s
